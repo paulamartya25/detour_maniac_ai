@@ -209,6 +209,22 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+st.markdown("### Explore your trip")
+directions_option, hotels_option, attractions_option = st.columns(3)
+with directions_option:
+    st.markdown("#### 🧭 Directions")
+    st.caption("Open a route to your destination from your selected location.")
+with hotels_option:
+    st.markdown("#### 🏨 Hotels")
+    st.caption("See only stays whose estimated price band fits your hotel budget.")
+with attractions_option:
+    st.markdown("#### 🗺️ Attractions & maps")
+    st.caption("Discover public attractions and open directions to each one.")
+
+st.caption(
+    "Use the Hotels, Attractions, and Maps entries in the left navigation, or keep scrolling to use the complete plan on this page."
+)
+
 if not settings:
     st.info("Enter a destination in the sidebar to build your complete trip plan.")
     st.stop()
