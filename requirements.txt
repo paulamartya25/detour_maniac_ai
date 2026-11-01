@@ -5,7 +5,7 @@ pandas>=2.0.0
 python-dotenv>=1.0.0
 
 # Geolocation
-streamlit-js-eval>=0.1.5
+streamlit-js-eval>=0.1.7
 
 # Testing
 pytest>=7.4.0
